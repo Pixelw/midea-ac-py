@@ -256,6 +256,8 @@ class MideaClimateACDevice(ClimateDevice, RestoreEntity):
     async def async_set_fan_mode(self, fan_mode):
         """Set new target temperature."""
         from midea.device import air_conditioning_device as ac
+        """Fix key error when calling from HomeKit"""
+        fan_mode = fan_mode.capitalize()
         self._device.fan_speed = ac.fan_speed_enum[fan_mode]
         self._changed = True
         await self.apply_changes()
