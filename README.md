@@ -3,7 +3,7 @@ Home Assistant Custom Integration for Midea Group(Hualing, Senville, Klimaire, A
 Tested with Home Assistant 2021.7.2.
 
 ## Attention!!!
-Version >= 0.1.27, The ENTITY ID of the climate devices has been changed. if you have any problem with an old entity being "unavailable", you should check whats the new ID name of the entity and change it in lovlace.
+Version >= 0.1.27, The ENTITY ID of the climate devices has been changed. if you have any problem with an old entity being "unavailable", you should check whats the new ID name of the entity and change it in lovelace.
 
 ## Installation
 
